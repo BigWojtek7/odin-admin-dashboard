@@ -44,7 +44,7 @@ display: grid;
   background-color: #FFFFFF;
   border: 1px solid #E5E7EB;
   border-radius: 20px;
-  background-color: #c2c2c2;
+  background-color: #ede9fe;
   /* width: 600px; */
   font-size: 14px;
   padding: 7px;
@@ -55,7 +55,9 @@ display: grid;
   display: grid;
   grid-template-columns: 50px 70px 120px;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+  font-family: my-font-face-bold;
+  gap: 20px;
 }
 
 .header .header-down {
@@ -68,11 +70,16 @@ display: grid;
   display: grid;
   grid-template-columns: 100px 1fr;
   align-items: center;
+  padding-bottom: 0px;
 }
 
 .user-info img[src="images/account.svg"]{
-  width: 4em;
+  width: 5em;
   padding-left: 15px;
+}
+.user-info p span {
+  font-size: 1.2rem;
+  font-family: my-font-face-bold;
 }
 
 .header-down .buttons {
@@ -81,6 +88,7 @@ display: grid;
   align-items: center;
   justify-content: center;
   column-gap: 30px;
+  padding-bottom: 0px;
 }
 .header-down button {
   font-size: 1rem;
@@ -114,38 +122,73 @@ display: grid;
 }
 
 
-.main-content {
+.container .main-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #d9d9d9;
+  background-color: #ede9fe;
+  padding: 10px 30px 50px 10px;
 }
 .project {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px;
+  grid-template-rows: 30px 1fr 1fr 1fr;
+  gap: 25px;
+  
 }
+.project> p {
+  grid-column: 1/3;
+  font-size: 1.2rem;
+  align-self: end;
+}
+
 
 
 .project .card {
   background-color: #ffffff;
   /* height: 200px; */
   box-shadow: 3px 4px 3px #bebebe;
-  border-radius: 5px;
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  padding: 0px;
 }
+
+.card .stripe {
+  background: linear-gradient(#5995da, #8b5cf6);
+  grid-row: 1/3;
+  border-radius: 7px 0 0 7px;
+  padding: 0;
+}
+
+
+.card .card-content {
+  padding: 30px 20px 20px 30px;
+}
+.card .card-icons {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  justify-content: end;
+  column-gap: 10px;
+  padding-bottom: 20px;
+}
+
+
 .card .title,
-.announcements .title {
+.announcements .title,
+.side-text span {
   font-family: my-font-face-bold;
 }
 
 .side {
   display: grid;
-  gap: 30px;
+  gap: 25px;
+  grid-template-rows: 30px 1fr 30px 1fr;
 }
 
-/* p{
-  padding: 10px;
-} */
+.side > p {
+  font-size: 1.2rem;
+  align-self: end;
+}
 
 .side .announcements,
 .side .trending {
@@ -155,11 +198,12 @@ display: grid;
 }
 
 .side .announcements{
-  padding: 40px;
+  padding: 30px;
   font-size: 0.7rem;
+  margin-bottom: 10px;
 }
 .announcements hr {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 .side .trending {
