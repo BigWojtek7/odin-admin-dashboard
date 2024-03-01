@@ -12,6 +12,7 @@
   font-family: my-font-face-bold;
   src: url(font/Readiness-Bold.ttf);
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -24,9 +25,9 @@
 }
 
 .container .header {
-grid-column: 2/3;
-display: grid;
-padding-top: 0;
+  grid-column: 2/3;
+  display: grid;
+  padding-top: 0;
 }
 
 .header .header-up {
@@ -34,11 +35,11 @@ padding-top: 0;
   grid-template-columns: 1fr 2fr;
   padding: 0 10px 0 10px;
 }
+
 .header-up .search-bar {
   display: grid;
   grid-template-columns: 50px 600px;
   align-items: center;
-
 }
 
 .search-bar input {
@@ -73,10 +74,11 @@ padding-top: 0;
   padding-bottom: 0px;
 }
 
-.user-info img[src="images/account.svg"]{
+.user-info img[src="images/account.svg"] {
   width: 5em;
   padding-left: 15px;
 }
+
 .user-info p span {
   font-size: 1.2rem;
   font-family: my-font-face-bold;
@@ -90,6 +92,7 @@ padding-top: 0;
   column-gap: 30px;
   padding-bottom: 0px;
 }
+
 .header-down button {
   font-size: 1rem;
   font-weight: bold;
@@ -103,8 +106,6 @@ padding-top: 0;
   padding: 10px 30px;
   cursor: pointer;
 }
-
-
 
 .sidebar {
   grid-row: 1/4;
@@ -122,13 +123,13 @@ padding-top: 0;
   padding-top: 0;
 }
 
-
 .container .main-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: #ede9fe;
   padding: 10px 30px 50px 10px;
 }
+
 .project {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -142,11 +143,8 @@ padding-top: 0;
   align-self: end;
 }
 
-
-
 .project .card {
   background-color: #ffffff;
-  /* height: 200px; */
   box-shadow: 3px 4px 3px #bebebe;
   border-radius: 7px;
   display: grid;
@@ -161,10 +159,10 @@ padding-top: 0;
   padding: 0;
 }
 
-
 .card .card-content {
   padding: 30px 20px 20px 30px;
 }
+
 .card .card-icons {
   display: grid;
   grid-template-columns: 50px 50px 50px;
@@ -172,7 +170,6 @@ padding-top: 0;
   column-gap: 10px;
   padding-bottom: 20px;
 }
-
 
 .card .title,
 .announcements .title,
@@ -198,7 +195,7 @@ padding-top: 0;
   box-shadow: 3px 4px 3px #bebebe;
 }
 
-.side .announcements{
+.side .announcements {
   padding: 30px;
   font-size: 0.7rem;
   margin-bottom: 10px;
@@ -209,8 +206,6 @@ padding-top: 0;
 
 .side .trending {
   display: grid;
-
-
 }
 
 .trending .side-user {
@@ -226,21 +221,22 @@ padding-top: 0;
 .side-text,
 .side-icon {
   display: inline-block;
-
 }
 
 img {
   width: 2em; 
 }
+
 img[src="images/account.svg"]{
   width: 3em;
 }
 
-/* links sidebar */
+/* sidebar links */
 
 .sidebar ul {
   list-style-position: inside;
 }
+
 ul li {
   padding: 8px 0;
   list-style-image: url(images/list/home.svg);
@@ -271,7 +267,6 @@ ul li {
 .links-down ul li:nth-child(3){
   list-style-image: url(images/list/check-circle-outline.svg);
 }
-
 
 li::marker{
   font-size: 2.5em;
