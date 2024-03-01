@@ -3,9 +3,20 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: my-font-face;
+  src: url(font/Readiness-Regular.ttf);
+}
+
+@font-face {
+  font-family: my-font-face-bold;
+  src: url(font/Readiness-Bold.ttf);
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  font-family: my-font-face;
+  font-weight: 900;
 }
 
 .container div {
@@ -24,7 +35,7 @@ display: grid;
 }
 .header-up .search-bar {
   display: grid;
-  grid-template-columns: 50px 650px;
+  grid-template-columns: 50px 600px;
   align-items: center;
 
 }
@@ -34,7 +45,7 @@ display: grid;
   border: 1px solid #E5E7EB;
   border-radius: 20px;
   background-color: #c2c2c2;
-  width: 600px;
+  /* width: 600px; */
   font-size: 14px;
   padding: 7px;
 }
@@ -86,7 +97,7 @@ display: grid;
   grid-row: 1/4;
   font-size: 1.2rem;
   display: grid;
-  grid-template-rows: 100px 200px 200px;
+  grid-template-rows: 100px 320px 250px;
   background-color: #5995DA;
   color: #ffffff;
 }
@@ -109,13 +120,18 @@ display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px;
 }
+
+
 .project .card {
   background-color: #ffffff;
-  height: 200px;
+  /* height: 200px; */
   box-shadow: 3px 4px 3px #bebebe;
   border-radius: 5px;
 }
-
+.card .title,
+.announcements .title {
+  font-family: my-font-face-bold;
+}
 
 .side {
   display: grid;
@@ -129,10 +145,35 @@ display: grid;
 .side .announcements,
 .side .trending {
   background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 3px 4px 3px #bebebe;
 }
 
+.side .announcements{
+  padding: 40px;
+  font-size: 0.7rem;
+}
+.announcements hr {
+  margin: 20px 0;
+}
+
+.side .trending {
+  display: grid;
 
 
+}
+
+.trending .side-user {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  padding: 0px;
+}
+
+.side-text,
+.side-icon {
+  display: inline-block;
+
+}
 
 img {
   width: 2em; 
@@ -140,9 +181,14 @@ img {
 img[src="images/account.svg"]{
   width: 3em;
 }
-ul {
+.sidebar ul {
   list-style-position: inside;
 }
+ul li {
+  padding: 10px 0;
+}
+
+
 
 span {
   display: block;
