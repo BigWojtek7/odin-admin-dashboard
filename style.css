@@ -70,6 +70,11 @@ display: grid;
   align-items: center;
 }
 
+.user-info img[src="images/account.svg"]{
+  width: 4em;
+  padding-left: 15px;
+}
+
 .header-down .buttons {
   display: grid;
   grid-template-columns: 120px 120px 120px;
@@ -169,6 +174,10 @@ display: grid;
   padding: 0px;
 }
 
+.side-icon img {
+  width: 3em;
+}
+
 .side-text,
 .side-icon {
   display: inline-block;
@@ -181,20 +190,58 @@ img {
 img[src="images/account.svg"]{
   width: 3em;
 }
+
+/* links sidebar */
+
 .sidebar ul {
   list-style-position: inside;
 }
 ul li {
-  padding: 10px 0;
+  padding: 8px 0;
+  list-style-image: url(images/list/home.svg);
+}
+
+.links-up ul li:nth-child(2){
+  list-style-image: url(images/list/profile.svg);
+}
+.links-up ul li:nth-child(3){
+  list-style-image: url(images/list/message.svg);
+}
+.links-up ul li:nth-child(4){
+  list-style-image: url(images/list/history.svg);
+}
+.links-up ul li:nth-child(5){
+  list-style-image: url(images/list/tasks.svg);
+}
+.links-up ul li:nth-child(6){
+  list-style-image: url(images/list/account-group.svg);
+}
+
+.links-down ul li:nth-child(1){
+  list-style-image: url(images/list/cogs.svg);
+}
+.links-down ul li:nth-child(2){
+  list-style-image: url(images/list/face-agent.svg);
+}
+.links-down ul li:nth-child(3){
+  list-style-image: url(images/list/check-circle-outline.svg);
 }
 
 
+li::marker{
+  font-size: 2.5em;
+  line-height: 0.1;
+}
+
+li span{
+  vertical-align: 0.2em;
+  display: inline;
+  padding-left: 15px;
+}
 
 span {
   display: block;
 }
 
-.user-info img[src="images/account.svg"]{
-  width: 4em;
-  padding-left: 15px;
-}
+
+
