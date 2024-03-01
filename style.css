@@ -23,15 +23,16 @@
   padding: 10px;
 }
 
-.header {
+.container .header {
 grid-column: 2/3;
 display: grid;
+padding-top: 0;
 }
 
 .header .header-up {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  padding-bottom: 0px;
+  padding: 0 10px 0 10px;
 }
 .header-up .search-bar {
   display: grid;
@@ -45,7 +46,6 @@ display: grid;
   border: 1px solid #E5E7EB;
   border-radius: 20px;
   background-color: #ede9fe;
-  /* width: 600px; */
   font-size: 14px;
   padding: 7px;
 }
@@ -53,7 +53,7 @@ display: grid;
 
 .header-up .notification {
   display: grid;
-  grid-template-columns: 50px 70px 120px;
+  grid-template-columns: 50px 70px 140px;
   align-items: center;
   justify-content: center;
   font-family: my-font-face-bold;
@@ -110,8 +110,8 @@ display: grid;
   grid-row: 1/4;
   font-size: 1.2rem;
   display: grid;
-  grid-template-rows: 100px 320px 250px;
-  background-color: #5995DA;
+  grid-template-rows: 80px 320px 250px;
+  background: linear-gradient(#5995da, #8b5cf6);
   color: #ffffff;
 }
 .sidebar .icon {
@@ -119,6 +119,7 @@ display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
   font-size: 1.5rem;
+  padding-top: 0;
 }
 
 
